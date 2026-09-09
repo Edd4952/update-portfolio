@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 15%, #f5deb355 0, transparent 32%),
+    radial-gradient(circle at 88% 30%, #5eead444 0, transparent 34%),
+    linear-gradient(160deg, #f6f7fb 0%, #eef7ff 45%, #ecfdf5 100%);
+  color: #14213d;
+}
+
+code {
+  font-family: "IBM Plex Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
