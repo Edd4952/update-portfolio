@@ -155,6 +155,233 @@
   font-weight: 500;
 }
 
+.resume-page {
+  width: min(95%, 1100px);
+}
+
+.resume-data-sections {
+  display: grid;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.resume-data-section {
+  padding: 1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #ffffffa6;
+}
+
+.resume-section-heading {
+  margin: 0 0 0.85rem;
+  color: #0f172a;
+  font-size: 1.1rem;
+  margin-top: 0.85rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project-card {
+  padding: 0.8rem;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.project-card h3,
+.record-heading h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.record-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.record-heading span {
+  color: #475569;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.project-description {
+  margin-top: 0.55rem;
+}
+
+.project-description p {
+  margin: 0.45rem 0 0;
+}
+
+.resume-preview-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.resume-preview-scroller {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #e2e8f0;
+}
+
+.resume-document {
+  box-sizing: border-box;
+  width: 816px;
+  margin: 0 auto;
+  padding: 64px 88px 72px;
+  background: #ffffff;
+  color: #111827;
+  font-family: Georgia, "Arial", serif;
+  font-size: 16px;
+  line-height: 1.32;
+  box-shadow: 0 8px 20px #0f172a24;
+}
+
+.resume-document header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.resume-document .name {
+  margin: 0 0 12px;
+  color: #111827;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.resume-document .contact-line {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.resume-document .summary-box {
+  margin-bottom: 26px;
+  padding: 14px 16px 16px;
+  border: 1px solid #374151;
+  text-align: center;
+}
+
+.resume-document .summary-title {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.resume-document .summary-text {
+  font-size: 15px;
+}
+
+.resume-document .section-heading {
+  margin: 0 0 12px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #374151;
+  color: #111827;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.resume-document .section-heading.centered {
+  text-align: center;
+}
+
+.resume-document .section-subheading {
+  margin: -4px 0 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.resume-document .job,
+.resume-document .project,
+.resume-document .col-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.resume-document .job {
+  margin: 0 0 15px;
+}
+
+.resume-document .job-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.resume-document .job-date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.resume-document .job-desc,
+.resume-document .project-desc {
+  white-space: pre-line;
+}
+
+.resume-document .job-desc {
+  margin-top: 2px;
+}
+
+.resume-document .project {
+  margin: 0 0 13px;
+}
+
+.resume-document .project-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.resume-document .project-desc {
+  margin-top: 2px;
+}
+
+.resume-document .page-break {
+  break-before: page;
+  page-break-before: always;
+  height: 0;
+}
+
+.resume-document .page-break + .section-heading {
+  padding-top: 16px;
+}
+
+.resume-document .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 28px;
+}
+
+.resume-document .col-heading {
+  margin-bottom: 14px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #374151;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resume-document .col-item {
+  margin-bottom: 13px;
+}
+
+.resume-document .col-item-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.resume-document .col-item-sub {
+  font-size: 16px;
+  font-style: italic;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -195,5 +422,10 @@
   .back-link {
     width: 100%;
     text-align: center;
+  }
+
+  .resume-preview-scroller {
+    margin: 0 -0.35rem;
+    padding: 0.6rem;
   }
 }
